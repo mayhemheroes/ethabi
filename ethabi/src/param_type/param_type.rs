@@ -16,6 +16,7 @@ use crate::no_std_prelude::*;
 
 /// Function and event param types.
 #[derive(Debug, Clone, PartialEq)]
+#[cfg_attr(feature = "arbitrary", derive(arbitrary::Arbitrary))]
 pub enum ParamType {
 	/// Address.
 	Address,
